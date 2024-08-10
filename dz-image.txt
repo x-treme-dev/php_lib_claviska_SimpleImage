@@ -1,0 +1,8 @@
+﻿1) Установить composer https://getcomposer.org/Composer-Setup.exe
+и GIT https://github.com/git-for-windows/git/releases/download/v2.46.0.windows.1/Git-2.46.0-64-bit.exe
+В настройках PHP нужно включить расширения GD и ZIP (в файле c:\xampp\php\php.ini раскомментировать строки extension=gd, extension=zip)
+Установить библиотеку https://github.com/claviska/SimpleImage (composer require claviska/simpleimage) и изучить ее документацию
+
+Создать страницу с полем ввода имени пользователя github, при отправке формы скрипт должен сохранять аватар пользователя 
+(https://api.github.com/users/checkuser). Все сохраненные аватары выводить таблицей, с помощью библиотеки SimpleImage 
+уменьшить до размера 75х75, сделать черно-белыми, при клике должна открываться исходная версия аватара
